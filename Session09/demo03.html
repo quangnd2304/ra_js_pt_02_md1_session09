@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các hàm window và DOM</title>
+</head>
+
+<body>
+    <script>
+        // alert(String): Hiển thị thông báo với nội dung là String
+        alert("Xin chào các bạn lớp JS-PT-02");
+        // confirm(String): Hiển thị thông báo, OK--> true,Cancel--> false
+        let result = confirm("Con gái lớp JS-PT-02 có phải rất xinh?");
+        console.log("Giá trị trả về result: ", result);
+        // prompt(String): Thông báo nhập dữ liệu, OK--> trả về nội dung nhập
+        //--> cancel --> trả về null
+        let personName = prompt('Nhập vào tên của bạn: ');
+        console.log("Tên vừa nhập là: ", personName);//cách 2
+        // console.log("String"): ghi String ra màn hình console
+        // console.log("String",value): ghi String và value ra màn hình console
+        console.log("Các bạn con trai lớp JS-PT-02 siêu đẹp zai (các thầy)");
+        //document.write(exp1,exp2,...,expn): in thông tin trên browser
+        document.write("Các bạn lớp JS-PT-02 sẽ trở thành các lập trình viên giỏi")
+    </script>
+</body>
+
+</html>

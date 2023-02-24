@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách viết javascript</title>
+</head>
+
+<body>
+    <!-- Viết javascript inline -->
+    <button onclick="alert('Bạn vừa viết JS theo cách inline')">Inline</button>
+    <!-- Viết javascript internal -->
+    <button onclick="notify()">Internal</button>
+    <script>
+        function notify() {
+            alert("Bạn vừa viết JS theo cách internal");
+        }
+    </script>
+    <!-- Viết javascript external -->
+    <button onclick="notifyExternal()">External</button>
+    <!-- Nhúng file JS bên ngoài vào file html -->
+    <script src="demo01.js"></script>
+</body>
+
+</html>

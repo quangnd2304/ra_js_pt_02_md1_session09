@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Demo</title>
+</head>
+
+<body>
+    <script>
+        // Khai báo và khởi tạo giá trị biến
+        let firstNumber = 5;
+        // Gán lại giá trị biến --> giá trị mới sẽ đè lên giá trị cũ
+        firstNumber = 10;
+        //Truy cập và in giá trị (value) của biến firstNumber
+        console.log("Giá trị biến firstNumber là:", firstNumber);
+        /*
+            1. Khai báo biến với từ khóa var: var [variableName]
+            2. Khai báo và khởi tạo giá trị: var [variableName] = value
+            Lưu ý: trong javascript câu lệnh kết thúc khi xuống dòng hoặc ;
+            3. var: khai báo biến toàn cục hoặc cục bộ
+            4. var: có thể khai báo lại và gán lại giá trị
+            5. hoisting: có thể sử dụng biến trước khi khai báo
+        */
+        var secondNumber;//Khai báo biến có tên là secondNumber - toàn cục
+        secondNumber = 20;//Khởi tạo giá trị cho biến secondNumber
+        var number = 30;//Khai báo và khởi tạo giá trị
+        if (secondNumber == 20) {
+            var age = 5;//cục bộ
+        }
+        var sex = "male";
+        // logic sử dụng sex với giá trị là male
+        var sex = "female";//Khai báo lại biến sex
+        sex = "other";//Gán lại giá trị cho biến
+        //hoisting
+        // var mark; (1)
+        console.log("Điểm sinh viên là: ", mark);//mark = undefined --> biến mark chưa được gán giá trị
+        //mark = 8;(2)
+        var mark = 8;//(1) và (2)
+        /*
+            1. Khai báo biến với từ khóa let: let [variableName] = value
+            2. Phạm vi của biến: khối lệnh
+            3. Không thể khai báo lại, có thể gán lại giá trị
+        */
+        {
+            // console.log("Nơi sinh của sinh viên: ", birthPlace);
+            let birthPlace = "Hà Nội";//Không thể hoisting
+            birthPlace = "Sài Gòn";//Có thể gán lại giá trị
+        }
+        /*
+            1. Khai báo biến với từ khóa const: const [variableName] = value
+            2. Phạm vi của biến: khối lệnh
+            3. Không thể khai báo lại, không thể gán lại giá trị
+            --> const: khai báo hằng số
+            - Khai báo phải khởi tạo giá trị cho hằng số
+            - Không thể thay đổi được giá trị của hằng số
+        */
+        {
+            const PI = 3.14;
+            // PI = 5;
+        }
+        /*
+            Các kiểu dữ liệu trong javascript
+            1. primitive - nguyên thủy: number: số, String: chuỗi, boolean: true/false, null, undefined
+            2. composite - non_primitive - reference - Tham chiếu
+            --> giá trị của biến có kiểu dữ liệu là gì
+            3. Gán giá trị cho biến --> biến nhận kiểu dữ liệu của giá trị được gán
+        */
+        let num = 10;//number
+        console.log("Kiểu dữ liệu của biến num-->", typeof (num));;
+        let teacherName = "Thắm";
+        console.log("Kiểu dữ liệu của biên teacherName-->", typeof (teacherName));
+        // String: chuỗi --> bao bọc trong "" hoặc ''
+        let gender = true;//boolean
+        let price;//undefined
+
+    </script>
+</body>
+
+</html>
